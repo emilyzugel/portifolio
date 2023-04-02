@@ -8,14 +8,22 @@
     font-family: "Red Hat Display", sans-serif;
 }
 
+:root{
+    --dark-purple: #0c0a20;
+    --light-purple: #6048df;
+    --green: #aae200;
+    --white: #f5f5f5;
+    --background: #131514;
+}
+
 body {
-    background-color: #131514;
-    color: #f5f5f5;
+    background-color: var(--background);
+    color: var(--white);
 }
 
 a {
     text-decoration: none;
-    color: #f5f5f5;
+    color: var(--white);
 }
 
 li {
@@ -32,11 +40,11 @@ li {
 /*BTN STYLES*/
 .outline-white-btn {
     background-color: transparent;
-    border: 1px solid #f5f5f5;
+    border: 1px solid var(--white);
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 5px;
-    color: #f5f5f5;
+    color: var(--white);
 }
 
 /*TITLE STYLES*/
@@ -44,7 +52,7 @@ li {
     font-family: "Gugi";
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #aae200;
+    -webkit-text-stroke-color: var(--green);
 }
 
 /*HEADER*/
@@ -70,7 +78,7 @@ header {
     font-family: "Gugi", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #f5f5f5;
+    color: var(--white);
 }
 
 .nav-link:hover {
@@ -85,7 +93,7 @@ header {
     background: linear-gradient(
         343.47deg,
         rgba(121, 72, 255, 0.63) -7.04%,
-        #0c0a20 72.36%
+        var(--dark-purple) 72.36%
     );
     width: 100%;
     height: 513px;
@@ -105,6 +113,7 @@ header {
     font-family: "Rubik Glitch";
     font-size: 26px;
     margin-bottom: 15px;
+    font-weight: normal;
 }
 
 .hero-p {
@@ -120,9 +129,9 @@ header {
 
 .hero-btn:hover {
     transition: 600ms ease-out;
-    background-color: #f5f5f5;
+    background-color: var(--white);
     font-family: "Rubik Glitch";
-    color: #0c0a20;
+    color: var(--dark-purple);
 }
 
 .right-block {
@@ -332,7 +341,7 @@ fieldset > legend {
 
 input:read-write,
 textarea:read-write {
-    color: #f5f5f5;
+    color: var(--white)
     font-family: "Roboto";
     font-size: 16px;
     border-radius: 5px;
@@ -346,7 +355,7 @@ textarea:read-write {
     font-size: 14px;
     font-family: "Roboto";
     font-weight: 600;
-    background-color: #f5f5f5;
+    background-color: var(--white);
     border: none;
     border-radius: 5px;
 }
