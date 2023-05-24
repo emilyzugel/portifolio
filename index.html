@@ -1,369 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Emily Zügel - Portifolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!--HEADER-->
-        <header>
-            <div class="container">
-                <figure>
-                    <img src="./img/logo.png" alt="logo" />
-                </figure>
-                <nav id="header-nav">
-                    <ul>
-                        <li>
-                            <a href="#works" class="nav-link">My Works</a>
-                        </li>
-                        <li>
-                            <a href="./about.html" class="nav-link">About me</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html" class="nav-link"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Emily Zügel - Portifolio</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <section id="navbar-section">
+        <div class="navbar-container">
+            <div id="logo">
+                <img src="./images/logoOpen.png" alt="logo">
             </div>
-        </header>
+            <nav id="navmenu">
+                <ul id="navmenu-list">
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
-        <!--HERO-->
-        <section class="hero-section">
-            <div class="container hero-container">
-                <div class="left-block">
-                    <div class="heading">
-                        <h1 class="hero-title outline-green-title">
-                            Hi There, I'm Emily!
-                        </h1>
+    <!-- HEADER -->
+    <header>
+        <div class="header-circle header-circle-left"></div>
+        <div class="header-circle header-circle-middle"></div>
+        <div class="header-circle header-circle-right"></div>
+        <div class="header-container container content-sections">
+            <section class="left-header-section">
+                <div id="header-name">emily</div>
+                <div class="profile-picture-container">
+                    <img src="./images/profile-picture.png" alt="profile picture">
+                </div>
+                <div id="header-lastname">zügel</div>
+            </section>
+            <section class="right-header-section">
+                <div id="header-glass" class="hover-scale">
+                    <div class="header-glass-info">
+                        <div class="header-glass-about-container">
+                            <h3 class="header-glass-title">About me:</h3>
+                            <ul id="header-glass-about-list" class="header-glass-lists">
+                                <li>
+                                    <img src="./images/web-icon.png" alt="icon" class="header-glass-icon">
+                                    <p>Learning Web Development</p>
+                                </li>
+                                <li>
+                                    <img src="./images/arch-icon.png" alt="icon" class="header-glass-icon">
+                                    <p>Linux lover</p>
+                                </li>
+                                <li>
+                                    <img src="./images/nerd-glasses-icon.png" alt="icon" class="header-glass-icon">
+                                    <p>Maybe a bit nerd</p>
+                                </li>
+                                <li>
+                                    <img src="./images/guitar-icon.png" alt="icon" class="header-glass-icon">
+                                    <p>I’m a guitarrist</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-glass-about-container">
+                            <h3 class="header-glass-title">My Skills:</h3>
+                            <ul id="header-glass-skills-list" class="header-glass-lists">
+                                <li>
+                                    <img src="./images/js-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/html-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/css-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/ps-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/ai-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/figma-icon.png" class="header-glass-skills-icon" alt="icon">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-glass-learning-container">
+                            <h3 class="header-glass-title">Still learning:</h3>
+                            <ul id="header-glass-learning-list" class="header-glass-lists">
+                                <li>
+                                    <img src="./images/ts-icon.png" class="header-glass-learning-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/react-icon.png" class="header-glass-learning-icon" alt="icon">
+                                </li>
+                                <li>
+                                    <img src="./images/lua-icon.png" class="header-glass-learning-icon" alt="icon">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <h2 class="hero-subtitle">
-                        Front-End Development & Web Designer
-                    </h2>
-                    <p class="hero-p">
-                        I’m passionate for the web and design so I’m studying to
-                        helping brands find their visual identity and create web
-                        sites to make the business even more active.
+                </div>
+            </section>
+        </div>
+        <div id="header-fade"></div>
+    </header>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="content-sections">
+        <div class="projects-container">
+            <h2 id="projects-title" class="section-title">my projects</h2>
+            <div class="projects-grid-container">
+                <section id="projects-grid">
+                    <a class="project-block hover-scale grayfilter" href="https://www.figma.com/proto/TGdm1DvlzIgXDpfig7FyqV/Burger-App?node-id=4%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2&show-proto-sidebar=1" target="_blank">
+                        <img src="./images/burger-app.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">ui design <br> burger app</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="https://emilyzugel.github.io/Biznus-Template-Remake/index.html" target="_blank">
+                        <img src="./images/acme-frontend.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">frontend <br> web site</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="https://emilyzugel.github.io/Edie-homepage/" target="_blank">
+                        <img src="./images/edie-frontend.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">front-end <br> web site</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="https://www.figma.com/file/qGnkBvQSkejfwmmWSXCAzp/Juliana---View?type=design&node-id=0%3A1&t=ZrC2GVesm0dQVhPu-1" target="_blank">
+                        <img src="./images/juliana-design.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">graphic design <br> visual identity</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="https://www.figma.com/file/r3BtGM1gTpyKJhU9ZN2Rao/mari-cake?type=design&node-id=0%3A1&t=ijjpyc4dmJmFxn2c-1" target="_blank">
+                        <img src="./images/maricake-design.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">graphic design <br> visual identity</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="https://www.figma.com/file/B9sviHLAUQK6w19QTFPJNA/Starbucks-Prototype?node-id=0%3A1&t=Ml3OM7Ptt2Du86h9-1" target="_blank">
+                        <img src="./images/starbucks-design.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">ui design <br> starbucks web site</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="#" target="_blank">
+                        <img src="./images/js-tic-tac-toe.jpg" alt="image" class="project-img">
+                        <div class="project-title-container">
+                            <h4 class="project-title">javascript<br> tic-tac-toe</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="#" target="_blank">
+                        <div class="project-coming-soon">Coming soon...</div>
+                        <div class="project-title-container">
+                            <h4 class="project-title">project <br> in work</h4>
+                        </div>
+                    </a>
+                    <a class="project-block hover-scale grayfilter" href="#" target="_blank">
+                        <div class="project-coming-soon">Coming soon...</div>
+                        <div class="project-title-container">
+                            <h4 class="project-title">project <br> in work</h4>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="content-sections">
+        <div class="skills-container">
+            <h2 class="section-title" id="skills-title">my skills</h2>
+            <ul class="skills-bar-list">
+                <li>
+                    <img src="./images/html-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-1 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/css-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-2 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/js-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-3 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/ts-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-4 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/react-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-5 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/lua-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-6 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/ps-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-7 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/ai-icon.png" alt="icon" class="skills-bar-icon">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-8 skill-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/figma-icon.png" alt="icon" class="skills-bar-icon-figma">
+                    <div class="skills-blank-bar">
+                        <div class="skill-bar-9 skill-bar"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-sections">
+        <div class="contact-container">
+            <div class="contact-left-block">
+                <h2 class="section-title">contact me</h2>
+                <form action="" class="contact-form">
+                    <fieldset>
+                        <legend>Your name:</legend>
+                        <input type="text" name="name" id="name-input" class="form-input">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your email:</legend>
+                        <input type="text" name="email" id="email-input" class="form-input">
+                    </fieldset>
+                    <fieldset id="msg-fieldset">
+                        <legend>Message:</legend>
+                        <textarea name="message" id="message-input" cols="" rows=""></textarea>
+                    </fieldset>
+                    <p id="error"></p>
+                    <button type="submit" class="white-btn hover-scale" id="submit-btn" onclick="error()">submit</button>
+                </form>
+            </div>
+            <div class="contact-right-block">
+                <a href="https://wa.me/5555999690555/" target="_blank" id="wpp-btn-link" class="white-btn hover-scale">
+                    <img src="./images/wpp-icon.png" alt="logo icon">
+                    Whatsapp me
+                </a>
+                <section id="contact-social-media-section">
+                    <p>
+                        or
+                        <br> <br>
+                        find me on:
                     </p>
-                    <button class="hero-btn outline-white-btn">
-                        More about me
-                    </button>
-                </div>
-                <div class="right-block">
-                    <img src="img/me-b&w.png" alt="Picture" id="hero-picture" />
-                </div>
-            </div>
-        </section>
-
-        <!--WORKS SECTION CODE-->
-        <section class="works-section" id="works">
-            <div class="container works-container">
-                <div class="works-title-wrapper">
-                    <h2 class="works-title outline-green-title">My Codes</h2>
-                </div>
-                <section class="works-grid-code">
-                    <div class="work-block work-block-code">
-                        <figure class="project-preview">
-                            <a
-                                href="https://emilyzugel.github.io/Biznus-Template-Remake/index.html"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./img/acme-outdoors-page.jpg"
-                                    alt="Acme Project"
-                                    class="project-preview"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">
-                                Acme E-Commerce Remake
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-code">
-                        <figure class="project-preview">
-                            <a
-                                href="https://emilyzugel.github.io/Edie-homepage/"
-                                target="_blank"
-                            >
-                                <img
-                                    class="project-preview"
-                                    src="./img/edie-page-screenshot.jpg"
-                                    alt="
-                                Edie Page Project"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">Edie Page</h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <figcaption>Coming Soon</figcaption>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">Project Title</h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <figcaption>Coming Soon</figcaption>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">Project Title</h2>
-                        </div>
+                    <div class="contact-social-media-icons">
+                        <a href="https://www.instagram.com/_zpicyy/" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon" class="hover-scale"></a>
+                        <a href="https://www.linkedin.com/in/emilyzugel/" target="_blank"><img src="./images/linkedin-icon.png" alt="linkedin icon" class="hover-scale"></a>
+                        <a href="https://github.com/emilyzugel" target="_blank"><img src="./images/github-icon.png" alt="github-icon" class="hover-scale"></a>
                     </div>
                 </section>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--WORKS SECTION DESIGN-->
-        <section class="works-section" id="works">
-            <div class="container works-container">
-                <div class="works-title-wrapper">
-                    <h2 class="works-title outline-green-title">My Designs</h2>
-                </div>
-                <section class="works-grid-design">
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <a
-                                href="https://www.figma.com/proto/TGdm1DvlzIgXDpfig7FyqV/Burger-App?node-id=4%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2&show-proto-sidebar=1"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./img/burguer-app.jpg"
-                                    alt="Burger App project"
-                                    class="project-preview"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Design Project
-                            </h3>
-                            <h2 class="project-title">Burger App Prototype</h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <a
-                                href="https://www.figma.com/file/B9sviHLAUQK6w19QTFPJNA/Starbucks-Prototype?node-id=0%3A1&t=Ml3OM7Ptt2Du86h9-1"
-                                target="_blank"
-                            >
-                                <img
-                                    src="./img/starbucks-mockups.jpg"
-                                    alt="Starbucks Site Remake"
-                                    class="project-preview"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Design Project
-                            </h3>
-                            <h2 class="project-title">
-                                Starbucks Site - Figma Prototype
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <a
-                                href="https://www.figma.com/file/B9sviHLAUQK6w19QTFPJNA/Starbucks-Prototype?t=gMmwpjfpvzYzmHUG-1"
-                                target="_blank"
-                            >
-                                <img
-                                    class="project-preview"
-                                    src="./img/ui-ux-design-mockups.jpg"
-                                    alt="UI / UX Project"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Design Project
-                            </h3>
-                            <h2 class="project-title">Workout App UI Design</h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <a
-                                href="https://www.figma.com/file/J9LL6M9jJSq56VyXpjjvzm/Fynes-Sweet-Design?node-id=0%3A1&t=gMmwpjfpvzYzmHUG-1"
-                                target="_blank"
-                            >
-                                <img
-                                    class="project-preview"
-                                    src="./img/fynes-sweet.jpg"
-                                    alt="Fynes Sweet Visual Identity"
-                                />
-                            </a>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Design Project
-                            </h3>
-                            <h2 class="project-title">
-                                Fynes Sweet - Visual identity
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <figcaption>Coming Soon</figcaption>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">Project Title</h2>
-                        </div>
-                    </div>
-                    <div class="work-block work-block-design">
-                        <figure class="project-preview">
-                            <figcaption>Coming Soon</figcaption>
-                        </figure>
-                        <div class="project-description-wrapper">
-                            <h3 class="subtitle project-subtitle">
-                                Front-End Project
-                            </h3>
-                            <h2 class="project-title">Project Title</h2>
-                        </div>
+    <!-- FOOTER -->
+    <div id="footer-fade" class="content-sections"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top-block">
+                <section class="footer-left-block">
+                    <img src="./images/logoClosed.png" alt="footer logo">
+                    <div >
+                        <a href="https://www.instagram.com/_zpicyy/" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon" class="footer-social-media-icons hover-scale"></a>
+                        <a href="https://www.linkedin.com/in/emilyzugel/" target="_blank"><img src="./images/linkedin-icon.png" alt="linkedin icon" class="footer-social-media-icons hover-scale"></a>
+                        <a href="https://github.com/emilyzugel" target="_blank"><img src="./images/github-icon.png" alt="github-icon" class="footer-social-media-icons hover-scale"></a>
                     </div>
                 </section>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact-section" id="contact">
-            <div class="container contact-container">
-                <div class="contact-top-block">
-                    <h2 class="contact-title">
-                        Want to create something great together? <br />
-                        Shoot me an email:
-                    </h2>
-                </div>
-                <div class="contact-bottom-block">
-                    <h2 class="contact-form-title">Contact</h2>
-                    <form action="" method="post" class="contact-form">
-                        <fieldset>
-                            <legend class="contact-form-legend">Name</legend>
-                            <input
-                                type="text"
-                                name="name"
-                                class="contact-form-input"
-                            />
-                        </fieldset>
-                        <fieldset>
-                            <legend class="contact-form-legend">Email</legend>
-                            <input
-                                type="email"
-                                name="email"
-                                class="contact-form-input"
-                            />
-                        </fieldset>
-                        <fieldset>
-                            <legend class="contact-form-legend">Message</legend>
-                            <textarea
-                                name="message"
-                                id="message-textarea"
-                                cols="20"
-                                rows="10"
-                            ></textarea>
-                        </fieldset>
-                        <button
-                            class="form-btn"
-                            type="button"
-                            value="Send"
-                            onclick="errorMsg()"
-                        >
-                            Send
-                        </button>
-                        <p id="error"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="container footer-container">
-                <div class="footer-left-block">
-                    <figure id="footer-logo">
-                        <img src="./img/logo.png" alt="logo" />
-                    </figure>
+                <section class="footer-right-block">
                     <nav id="footer-nav">
                         <ul>
                             <li>
-                                <a href="#home" class="footer-nav-link">Home</a>
+                                <a href="#about" class="hover-scale">about me</a>
                             </li>
                             <li>
-                                <a href="#works" class="footer-nav-link"
-                                    >My Works</a
-                                >
+                                <a href="#projects" class="hover-scale">my projects</a>
                             </li>
                             <li>
-                                <a href="#about" class="footer-nav-link"
-                                    >About me</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#contact" class="footer-nav-link"
-                                    >Contact</a
-                                >
+                                <a href="#contact" class="hover-scale">contact me</a>
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="footer-right-block">
-                    <h3 class="sm-footer-title">Follow Me</h3>
-                    <div class="sm-icons-wrapper">
-                        <a
-                            class="sm-icon-a"
-                            href="https://www.instagram.com/zugeldesign/"
-                            target="_blank"
-                            ><img
-                                src="./img/instagram-icon.png"
-                                alt="instagram-icon"
-                        /></a>
-                        <a
-                            class="sm-icon-a"
-                            href="https://www.linkedin.com/in/emilyzugel/?original_referer=https%3A%2F%2Flinktr.ee%2F"
-                            target="_blank"
-                            ><img
-                                src="./img/linkedin-icon.png"
-                                alt="linkedin-icon"
-                        /></a>
-                        <a
-                            class="sm-icon-a"
-                            href="https://github.com/emilyzugel"
-                            target="_blank"
-                            ><img src="./img/github-icon.png" alt="github-icon"
-                        /></a>
-                    </div>
-                </div>
+                </section>
             </div>
-            <p id="copyrights">&copy; created by Emily Zügel</p>
-        </footer>
+            <div class="footer-copyright-block">
+                <div class="footer-copyrights">&copy; created by Emily Zügel</div>
+            </div>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>
 </html>
