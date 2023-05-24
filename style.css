@@ -65,6 +65,9 @@ a {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    border: 1px solid linear-gradient(30deg, 
+    rgba(30, 30, 46, 0.6) 100%,
+    rgba(255, 255, 255, 0.7) 100%);
 }
 
 .content-sections{
@@ -109,6 +112,17 @@ nav a, #navmenu-list{
 nav a:is(:hover, :active){
     font-weight: 600; /*semi-bold*/
 }
+#mobile-navmenu{
+    display: none;
+}
+#burger-menu > div{
+    width: 25px;
+    height: 1px;
+    background-color: var(--text);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
 
 /* HEADER */
 .header-circle{
@@ -140,7 +154,7 @@ header{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -195,7 +209,7 @@ header{
     rgba(205, 214, 244, 0.08) 85.83%);
     box-shadow: 0px 3.35946px 20.1568px -0.839866px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(12.598px);
-    border: 0.84px solid;
+    border: 1px solid;
     border-image-source: linear-gradient(30deg, 
     rgba(30, 30, 46, 0.6) 2.73%, 
     rgba(103, 103, 114, 0.6) 36.64%, 
@@ -275,7 +289,7 @@ header{
     width: 100%;
     background-color: #1E1E2Ebb;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 .project-title{
     text-transform: uppercase;
@@ -459,6 +473,7 @@ textarea:read-write {
     width: 270px;
     text-transform: none;
     padding: 10px;
+    border: 1px solid rgba(74, 74, 122, 0.6);
 }
 #contact-social-media-section p {
     margin: 40px 0px;
@@ -511,4 +526,93 @@ footer{
     display: inline-flex;
     justify-content: center;
     margin: 20px 0px;
+}
+
+/*  --MEDIA QUERIES:
+    --mobile (width =< 480px)
+    --tablet (width =< 770px)
+    --desktop (width =< 1023px)
+*/
+@media (max-width: 400px){
+    .left-header-section,
+    .right-header-section{
+        width: 86%;
+    }
+}
+
+@media (max-width: 900px){
+    /* NAVBAR */
+    #navmenu-list{
+        display: none;
+    }
+    #mobile-navmenu{
+        display: flex;
+    }
+
+    /* HEADER */
+    .header-container{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    /* PROJECTS */
+    #projects-grid{
+        display: block;
+    }
+    .project-block{
+        margin-bottom: 40px;
+    }
+
+    /* SKILLS */
+    .skills-bar-list{
+        flex-wrap: nowrap;
+        height: max-content;
+    }
+
+    /* CONTACT */
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-left-block,
+    .contact-right-block{
+        width: 100%;
+        margin-left: 0%;
+        align-content: center;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-right-block{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 1000px){
+    /* PROJECTS */
+    #projects-grid{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        place-items: center;
+    }
+
+    /* CONTACT */
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-left-block,
+    .contact-right-block{
+        width: 100%;
+        margin-left: 0%;
+        align-content: center;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-right-block{
+        margin-top: 120px;
+    }
 }
