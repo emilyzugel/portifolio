@@ -234,6 +234,8 @@ header{
 }
 .header-glass-info{
     margin: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .header-glass-lists li{
     display: inline-flex;
