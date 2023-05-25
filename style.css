@@ -43,7 +43,7 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 90vw;
 }
 
 ul,
@@ -162,7 +162,7 @@ header{
     flex-direction: column;
 }
 .header-container{
-    width: 90%;
+    width: 90vw;
     height: 440px;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ header{
 }
 /* Left header */
 .left-header-section{
-    width: 50%;
+    width: 50vw;
     display: grid;
     place-content: center;
 }
@@ -198,7 +198,7 @@ header{
 }
 /*  Right header */
 .right-header-section{
-    width: 50%;
+    width: 50vw;
     display: grid;
     place-content: center;
 }
@@ -245,7 +245,7 @@ header{
 }
 /* Bottom header */
 #header-fade{
-    width: 100%;
+    width: 100vw;
     height: 250px;
     background: linear-gradient(360deg, rgba(30, 30, 46, 0) 0%, #1E1E2E 48.7%, rgba(30, 30, 46, 0) 100%);
     position: relative;
@@ -255,7 +255,7 @@ header{
 
 /* PROJECTS */
 #projects{
-    width: 100%;
+    width: 100vw;
     margin-top: -50px;
     margin-bottom: 200px;
     width: 100%;
@@ -286,7 +286,7 @@ header{
     overflow: hidden;
 }
 .project-title-container{
-    width: 100%;
+    width: 100vw;
     background-color: #1E1E2Ebb;
     position: absolute;
     z-index: 0;
@@ -312,14 +312,14 @@ header{
 
 /* SKILLS */
 #skills{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .skills-container{
-    width: 90%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,19 +404,19 @@ header{
 
 /* CONTACT */
 #contact{
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .contact-container{
-    width: 70%;
+    width: 70vw;
     display: flex;
     align-content: center;
 }
 .contact-left-block,
 .contact-right-block{
-    width: 50%;
+    width: 50vw;
     display: flex;
     flex-direction: column;
 }
@@ -484,19 +484,19 @@ textarea:read-write {
 
 /* FOOOTER */
 #footer-fade{
-    width: 100%;
+    width: 100vw;
     height: 120px;
     background: linear-gradient(180deg, rgba(30, 30, 46, 0) 0%, var(--base) 100%);
 }
 footer{
     background-color: var(--base);
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer-container{
-    width: 80%;
+    width: 80vw;
     display: flex;
     flex-direction: column;
 }
@@ -505,7 +505,7 @@ footer{
 }
 .footer-left-block,
 .footer-right-block{
-    width: 50%;
+    width: 50vw;
     margin-bottom: 40px;
 }
 .footer-right-block{
@@ -522,7 +522,7 @@ footer{
     justify-content: flex-end;
 }
 .footer-copyright-block{
-    width: 100%;
+    width: 100vw;
     display: inline-flex;
     justify-content: center;
     margin: 20px 0px;
@@ -536,7 +536,7 @@ footer{
 @media (max-width: 400px){
     .left-header-section,
     .right-header-section{
-        width: 86%;
+        width: 80vw;
     }
 }
 
@@ -575,7 +575,7 @@ footer{
     }
     .contact-left-block,
     .contact-right-block{
-        width: 100%;
+        width: 100vw;
         margin-left: 0%;
         align-content: center;
     }
