@@ -5,22 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  </link>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<navBar>
   <!-- Components will be inserted here by JavaScript -->
-  <portfolio-navbar></portfolio-navbar>
+  <navbar-c></navbar-c>
   <offscreen-menu></offscreen-menu>
-  <portfolio-header></portfolio-header>
-  <portfolio-projects></portfolio-projects>
-  <portfolio-footer></portfolio-footer>
+  <header-c></header-c>
+  <projects-grid></projects-grid>
+  <footer-c></footer-c>
 
-  <script src="script.js"></script>
-</body>
+  <script src="./home.js"></script>
+  <script src="./components/navbar.js"></script>
+  <script src="./components/header.js"></script>
+  <script src="./components/projects-grid.js"></script>
+  <script src="./components/footer.js"></script>
+  </body>
 
 </html>

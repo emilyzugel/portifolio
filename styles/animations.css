@@ -1,0 +1,120 @@
+/*Animation Typewriter*/
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 15px auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/*Holographic Effect*/
+.holographic-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  clip-path: polygon(50% 0%,
+      /* topo centro */
+      105% 27%,
+      /* topo direito */
+      105% 74%,
+      /* baixo direito */
+      50% 100%,
+      /* baixo centro */
+      0% 75%,
+      /* baixo esquerdo */
+      0% 24%
+      /* topo esquerdo */
+    );
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg,
+      transparent,
+      transparent 30%,
+      rgba(0, 255, 255, 0.3));
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  clip-path: inherit;
+  /* aplica o mesmo hexágono */
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/*End Holographic Effect*/
+
+/* Typewriter Effect */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 2s steps(44) 6 normal both;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* End Animation Typrwriter */
+
+/* Neon Effect */
+
+@keyframes neon1 {
+  from {
+    text-shadow:
+      0 0 10px rgba(180, 190, 254, 0.35),
+      0 0 18px rgba(180, 190, 254, 0.3),
+      0 0 25px rgba(205, 214, 244, 0.25),
+      0 0 35px rgba(180, 190, 254, 0.2),
+      0 0 55px rgba(180, 190, 254, 0.18),
+      0 0 70px rgba(180, 190, 254, 0.15),
+      0 0 90px rgba(180, 190, 254, 0.12),
+      0 0 120px rgba(205, 214, 244, 0.1);
+  }
+
+  to {
+    text-shadow:
+      0 0 5px rgba(180, 190, 254, 0.25),
+      0 0 10px rgba(180, 190, 254, 0.2),
+      0 0 15px rgba(205, 214, 244, 0.18),
+      0 0 25px rgba(180, 190, 254, 0.15),
+      0 0 40px rgba(180, 190, 254, 0.12),
+      0 0 55px rgba(180, 190, 254, 0.1),
+      0 0 70px rgba(180, 190, 254, 0.08),
+      0 0 90px rgba(180, 190, 254, 0.06);
+  }
+}
+
+/* End Neon Effect */

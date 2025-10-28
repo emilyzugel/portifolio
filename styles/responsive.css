@@ -1,0 +1,57 @@
+/* RESPONSIVE LAYOUT */
+/* Tablets*/
+@media (max-width: 1290px) {
+
+  .header-content,
+  .header-right,
+  .header-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-left {
+    transform: scale(.7);
+  }
+
+  .header-left {
+    transform: scale(.8);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-left {
+    transform: scale(.6);
+  }
+
+  .header-img {
+    margin-left: 4rem;
+  }
+
+  .header-left {
+    margin-bottom: 20px;
+  }
+
+  .header-right {
+    transform: scale(0.9);
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

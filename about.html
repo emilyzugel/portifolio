@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  </link>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/global.css" </link>
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -14,11 +16,30 @@
 
 <body>
   <!-- Components will be inserted here by JavaScript -->
-  <portfolio-navbar></portfolio-navbar>
+  <navbar-c></navbar-c>
   <offscreen-menu></offscreen-menu>
-  <portfolio-footer></portfolio-footer>
+  <about-c></about-c>
+  <footer-c></footer-c>
 
-  <script src="script.js"></script>
+  <script src="./components/navbar.js"></script>
+  <script src="./components/footer.js"></script>
+
+  <script>
+    class About extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.innerHTML = `
+            <section">
+                about
+            </section>
+        `;
+      }
+    } customElements.define('about-c', About);
+
+  </script>
 </body>
 
 </html>
