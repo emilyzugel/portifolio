@@ -91,7 +91,7 @@
 
 /* Neon Effect */
 
-@keyframes neon1 {
+@keyframes neon {
   from {
     text-shadow:
       0 0 10px rgba(180, 190, 254, 0.35),
