@@ -9,7 +9,7 @@ class Projects extends HTMLElement {
             <section id="projects">
                 <div class="container">
                     <h3>My Projects</h3>
-                    <div class="projects-grid">
+                    <div class="grid">
                         <!-- Project cards will be added here by JavaScript -->
                     </div>
                 </div>
@@ -17,7 +17,7 @@ class Projects extends HTMLElement {
         `;
 
     // Add project cards
-    const projectsGrid = this.querySelector('.projects-grid');
+    const projectsGrid = this.querySelector('.grid');
     const projects = [
       {
         title: "Responsive Blog",

@@ -176,7 +176,7 @@ navbar-c {
   width: 100%;
 }
 
-.skills-glass-wrapper {
+.glass-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
@@ -233,7 +233,7 @@ navbar-c {
   text-align: center;
 }
 
-.projects-grid {
+#projects .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;

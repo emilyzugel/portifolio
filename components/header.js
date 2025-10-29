@@ -14,16 +14,16 @@ class Header extends HTMLElement {
                             </div>
                             <div class="title">
                               <div class="firstname line-2 anim-typewriter2">Emily
-                                <div class="lastname">Zügel</div>
+                                <div class="lastname line-2 anim-typewriter2">Zügel</div>
                               </div>
                             </div>
                         </div>
                         <div class="right">
                             <img src="./images/terminal.svg" alt="terminal">
                             <p class="line-1 anim-typewriter">&gt Web Dev / Linux / Design</p>
-                            <div class="header-skills">
+                            <div class="skills-wrapper">
                               <p>MY SKILLS:</p>
-                              <div class="skills-glass-wrapper">
+                              <div class="glass-wrapper">
                                 <div class="glass scale" title="Arch Linux">
                                   <img src="./images/arch.svg" alt="arch icon">
                                 </div>
