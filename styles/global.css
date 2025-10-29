@@ -46,10 +46,6 @@ body {
   max-width: 100vw;
 }
 
-section {
-  padding: 2rem 0;
-}
-
 .container {
   width: 80vw;
   margin: 0 auto;
@@ -81,17 +77,20 @@ p {
 }
 
 /* Hover Effects */
-@media (min-width: 900px) {
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(137, 180, 250, 0.5);
-    background: linear-gradient(135deg, var(--mauve) 0%, var(--blue) 100%);
-  }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(137, 180, 250, 0.5);
+  background: linear-gradient(135deg, var(--mauve) 0%, var(--blue) 100%);
+}
 
-  .scale:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-  }
+.scale {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .scale-2:hover {

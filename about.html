@@ -23,23 +23,8 @@
 
   <script src="./components/navbar.js"></script>
   <script src="./components/footer.js"></script>
+  <script src="./components/about.js"></script>
 
-  <script>
-    class About extends HTMLElement {
-      constructor() {
-        super();
-      }
-
-      connectedCallback() {
-        this.innerHTML = `
-            <section">
-                about
-            </section>
-        `;
-      }
-    } customElements.define('about-c', About);
-
-  </script>
 </body>
 
 </html>

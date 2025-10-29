@@ -9,17 +9,19 @@ class PortfolioNavbar extends HTMLElement {
             <nav class="navbar">
                 <div class="container">
                     <div class="nav-content">
-                        <div class="logo">
-                            <a href="index.html"><img src="./images/zg-logo.svg" class="nav-logo"></a>
+                        <div class="navlogo-wrapper">
+                            <a class="logo glass scale" href="./index.html"><img src="./images/chilli-logo.svg"></a>
                         </div>
                       <!--Desktop Menu-->
                         <ul class="nav-links">
-                            <li class="scale"><a href="index.html">Projects</a></li>
-                            <li class="scale"><a href="about.html">About</a></li>
+                            <li><a class="glass scale" href="index.html">Projects</a></li>
+                            <li><a class="glass scale"href="about.html">About</a></li>
                         </ul>
                       <!-- Hamburger Menu -->
                       <div class="hamburger">
-                        <a class="hamburger-btn" onclick="menuPopUp()">☰</a>
+                        <a class="hamburger-btn glass" onclick="menuPopUp()">
+                          <img src="./images/menu-icon.svg">
+                        </a>
                       </div>
                 </div>
             </nav>

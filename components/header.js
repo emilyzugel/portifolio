@@ -6,8 +6,8 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-            <section id="home" class="header">
-                <div class="container">
+            <section class="header" id="matrix-container">
+                <div class="container"">
                         <div class="left">
                             <div class="holographic-card">
                               <img src="./images/polygon-picture.svg"a alt="profile picture">
@@ -24,16 +24,16 @@ class Header extends HTMLElement {
                             <div class="skills-wrapper">
                               <p>MY SKILLS:</p>
                               <div class="glass-wrapper">
-                                <div class="glass scale" title="Arch Linux">
+                                <div class="glass skill-square scale" title="Arch Linux">
                                   <img src="./images/arch.svg" alt="arch icon">
                                 </div>
-                                <div class="glass scale" title="JavaScript">
+                                <div class="glass skill-square scale" title="JavaScript">
                                   <img src="./images/javascript.svg" alt="javascript icon">
                                 </div>
-                                <div class="glass scale" title="NextJs">
+                                <div class="glass skill-square scale" title="NextJs">
                                   <img src="./images/nextjs.svg" alt="nextjs icon">
                                 </div>
-                                <div class="glass scale" title="Figma">
+                                <div class="glass skill-square scale" title="Figma">
                                   <img src="./images/figma.svg" alt="figma icon">
                                 </div>
                               </div>

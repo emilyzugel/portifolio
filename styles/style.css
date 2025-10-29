@@ -9,41 +9,52 @@ navbar-c {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--crust);
-  box-shadow: 0 2px 20px rgba(180, 190, 254, 0.1);
-  height: 3rem;
 }
 
 .navbar {
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
   transition: all 0.3s ease;
+  height: 1.5rem;
   width: 100%;
+  border-radius: 1.8rem;
+  margin-top: .5rem;
 }
 
 .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.nav-logo {
-  margin-top: 5px;
-  height: 1.7rem;
-  width: 100%;
+
+.nav-links li a,
+.navbar .logo {
+  border-radius: 15px;
+  box-shadow: 0 2px 30px rgba(180, 190, 254, 0.1);
+}
+
+.navbar .logo img {
+  margin: 5px 0;
+  height: 20px;
 }
 
 .nav-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-links li {
-  margin-left: 30px;
-  padding: 8px 16px;
+.nav-links li a {
+  padding: 0px 30px;
+  margin-left: 15px;
 }
 
-.nav-links a {
-  color: var(--subtext1);
-  font-weight: 500;
+.navbar .logo {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* -- HAMBURGER MENU ---- 
@@ -57,6 +68,12 @@ navbar-c {
   color: var(--text);
   font-size: 1.7rem;
   cursor: pointer;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.hamburger-btn img {
+  height: .6rem;
 }
 
 .offscreen-menu {
@@ -113,15 +130,17 @@ navbar-c {
 /*--- HEADER STYLES ------ 
 ---------------------------*/
 .header {
-  background-image: url("../images/binary-rain.png");
+  /*background-image: url("../images/binary-rain.png");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   top: 0;
   display: grid;
   align-items: center;
   justify-content: center;
   width: 100vw;
+  min-height: 400px;
 }
 
 .header .container {
@@ -183,52 +202,17 @@ navbar-c {
   gap: 1rem;
 }
 
-/* Glassy Visual for Skills */
-.glass {
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  color: var(--text);
-  flex-shrink: 0;
-  position: relative;
-  background: radial-gradient(circle at center,
-      rgba(255, 255, 255, .01) 40%,
-      /* centro transparente */
-      rgba(255, 255, 255, .1) 100%
-      /* bordas mais brancas */
-    );
-  backdrop-filter: blur(20px);
+.skill-square {
   padding: .6rem 1rem;
   border-radius: .3rem;
-  overflow: hidden;
-  /* clips the pseudo-element */
 }
-
-.glass::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: .08rem;
-  /* border thickness */
-  background: linear-gradient(320deg,
-      rgba(205, 214, 244, .8),
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, .8));
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-/* End Glassy Visual */
 
 /*--- PROJECTS STYLES ------ 
 ---------------------------*/
+#projects {
+  padding-bottom: 2rem;
+}
+
 #projects h3 {
   text-align: center;
 }
@@ -305,13 +289,30 @@ navbar-c {
   color: var(--subtext1);
 }
 
+/* --- About Page -------- 
+-------------------------*/
+.about {
+  min-height: 60vh;
+}
+
+.about .title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.about .title h3 {
+  font-style: italic;
+}
+
+/* -- End About Page -- */
+
 /*--- FOOTER STYLES ------ 
 ---------------------------*/
 footer {
-  background: var(--crust);
+  width: 100%;
   color: var(--text-light);
-  padding: 40px 0;
-  box-shadow: 2px 0 50px rgba(180, 190, 254, 0.1);
+  padding: 40px 0 0 0;
 }
 
 footer .top-wrapper {
@@ -319,15 +320,21 @@ footer .top-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+
+  border-radius: 2rem;
 }
 
 footer .logo {
-  height: 100px;
+  height: 50px;
   transition: all 0.3s;
 }
 
-footer .logo :hover {
+footer .logo-wrapper {
+  transform: scale(1);
+}
+
+footer .logo-wrapper :hover {
   transform: scale(1.1) rotate(5deg);
 }
 
@@ -339,7 +346,6 @@ footer .top-wrapper p {
 footer .social-media p {
   margin-left: 20px;
 }
-
 
 footer .bottom-wrapper {
   text-align: center;

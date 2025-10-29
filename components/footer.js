@@ -8,9 +8,9 @@ class Footer extends HTMLElement {
     this.innerHTML = `
             <footer>
                 <div class="container">
-                    <div class="top-wrapper">
+                    <div class="top-wrapper glass">
                         <a class="logo-wrapper" href="https://emilyzugel.github.io/portifolio/">
-                          <img  class="logo" src="./images/zg-logo.svg" alt="zg's logo">
+                          <img  class="logo" src="./images/footer-logo.svg" alt="zg's logo">
                         </a>
                             <div class="social-media">
                               <p>Find me: </p>
