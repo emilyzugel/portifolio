@@ -28,7 +28,7 @@ navbar-c {
 
 .nav-logo {
   margin-top: 5px;
-  height: 1.5rem;
+  height: 1.7rem;
   width: 100%;
 }
 
@@ -118,31 +118,40 @@ navbar-c {
   background-position: center;
   background-repeat: no-repeat;
   top: 0;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
 
-.header-content {
+.header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
+  justify-content: space-between;
 }
 
-.header-left p {
+.header .left img {
+  height: 300px;
+}
+
+.header .right {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.header .left p {
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: var(--subtext1);
 }
 
-.header-left {
+.header .left {
   display: flex;
+  width: max-content;
 }
 
-.name-title {
-  font-size: 5rem;
+.header .title {
+  font-size: 4rem;
   font-weight: bold;
   font-style: italic;
   position: relative;
@@ -157,8 +166,14 @@ navbar-c {
 }
 
 .name-title {
-  animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
   /*neon effect on ./styles/animations.css*/
+}
+
+.header .right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .skills-glass-wrapper {
@@ -299,7 +314,7 @@ footer {
   box-shadow: 2px 0 50px rgba(180, 190, 254, 0.1);
 }
 
-.footer-content {
+footer .top-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -307,21 +322,26 @@ footer {
   padding: 1rem 0;
 }
 
-.footer-content p {
+footer .logo {
+  height: 100px;
+  transition: all 0.3s;
+}
+
+footer .logo :hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+footer .top-wrapper p {
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-.footer-social-media p {
+footer .social-media p {
   margin-left: 20px;
 }
 
-.hover-scale:hover {
-  transform: scale(1.1);
-  transition: 0.2s ease;
-}
 
-.footer-bottom {
+footer .bottom-wrapper {
   text-align: center;
   padding-top: 20px;
   color: var(--overlay1);

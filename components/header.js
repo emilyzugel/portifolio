@@ -8,17 +8,17 @@ class Header extends HTMLElement {
     this.innerHTML = `
             <section id="home" class="header">
                 <div class="container">
-                    <div class="header-content">
-                        <div class="header-left">
-                            <div class="header-img holographic-card">
+                        <div class="left">
+                            <div class="holographic-card">
                               <img src="./images/polygon-picture.svg"a alt="profile picture">
                             </div>
-                            <div class="name-title">
-                              <div class="firstname">Emily</div>
-                              <div class="lastname">Zügel</div>
+                            <div class="title">
+                              <div class="firstname line-2 anim-typewriter2">Emily
+                                <div class="lastname">Zügel</div>
+                              </div>
                             </div>
                         </div>
-                        <div class="header-right">
+                        <div class="right">
                             <img src="./images/terminal.svg" alt="terminal">
                             <p class="line-1 anim-typewriter">&gt Web Dev / Linux / Design</p>
                             <div class="header-skills">
@@ -40,7 +40,6 @@ class Header extends HTMLElement {
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         `;
   }
