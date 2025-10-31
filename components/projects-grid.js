@@ -21,9 +21,9 @@ class Projects extends HTMLElement {
     const projects = [
       {
         title: "Responsive Blog",
-        description: "A fully responsive portifolio build with Vanilla JS components.",
-        image: "./images",
-        link: ""
+        description: "A fully responsive bitcoin blog build with Vanilla JS components.",
+        image: "./images/bitBlog.svg",
+        link: "https://emilyzugel.github.io/BitBlog/"
       },
       {
         title: "Tic-Tac-Toe Game",

@@ -292,7 +292,8 @@ navbar-c {
 /* --- About Page -------- 
 -------------------------*/
 .about {
-  min-height: 60vh;
+  min-height: 70vh;
+  padding: 2rem 0;
 }
 
 .about .title {
