@@ -26,10 +26,10 @@ class Projects extends HTMLElement {
         link: "https://emilyzugel.github.io/BitBlog/"
       },
       {
-        title: "Tic-Tac-Toe Game",
-        description: "A Web Tic Tac Toe Game build in JS.",
-        image: "./images/Tic-Tac-Toe.png",
-        link: "https://github.com/emilyzugel/JS-Tic-Tac-Toe"
+        title: "Log In Checkout",
+        description: "A Web Page with log in checkout in JS.",
+        image: "./images/pi-becker.png",
+        link: "https://emilyzugel.github.io/guia-do-aprendiz/"
       },
       {
         title: "Simple Blockchain",
