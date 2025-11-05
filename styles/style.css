@@ -210,7 +210,7 @@ navbar-c {
 /*--- PROJECTS STYLES ------ 
 ---------------------------*/
 #projects {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 #projects h3 {
@@ -307,6 +307,63 @@ navbar-c {
 }
 
 /* -- End About Page -- */
+
+/* Design's Page */
+.design {
+  margin-top: 5px;
+}
+
+.design .hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.figma-3d {
+  height: 200px;
+  width: auto;
+  z-index: 1;
+  opacity: .9;
+}
+
+.hero {
+  top: -40px;
+  position: relative;
+  background: var(--mantle);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero h2 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero p {
+  position: relative;
+  font-size: 1rem;
+  color: var(--text);
+  font-style: italic;
+}
+
+/* End Design's PAge */
 
 /*--- FOOTER STYLES ------ 
 ---------------------------*/

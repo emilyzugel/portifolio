@@ -38,22 +38,10 @@ class Projects extends HTMLElement {
         link: "https://github.com/emilyzugel/simpleBlockchain/"
       },
       {
-        title: "Figma Delivery Prototype",
-        description: "An mobile application design prototype build withy figma.",
-        image: "./images/burguer-app.jpg",
-        link: "https://www.figma.com/proto/TGdm1DvlzIgXDpfig7FyqV?node-id=0-1&t=avd1qbeSPRY2Q9iN-6"
-      },
-      {
         title: "My Portifolio Code",
         description: "A fully responsive portifolio build with Vanilla JS components.",
         image: "./images/github-portifolio.png",
         link: "https://github.com/emilyzugel/portifolio"
-      },
-      {
-        title: "My Portifolio - Figma",
-        description: "A fully responsive portifolio prototype build with Figma.",
-        image: "./images/portifolio-figma.png",
-        link: "https://www.figma.com/design/h29JyLzFjw3Lz8PiPxVhm9/zg-portifolio?node-id=0-1&t=lEPTbROfwI5cGBgu-1"
       }
     ];
 

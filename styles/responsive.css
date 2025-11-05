@@ -39,6 +39,23 @@
   .hamburger {
     display: flex;
   }
+
+  .design .hero {
+    height: fit-content;
+  }
+
+  .design .content {
+    flex-wrap: wrap;
+  }
+
+  .design .hero .container {
+    margin-top: 2rem;
+  }
+
+  .design .content {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Large phones (767px and down) */
@@ -70,6 +87,8 @@
     margin-top: -40px;
     transform: scale(.7);
   }
+
+
 
   footer .top-wrapper {
     flex-direction: column;

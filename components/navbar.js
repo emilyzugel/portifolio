@@ -15,6 +15,7 @@ class PortfolioNavbar extends HTMLElement {
                       <!--Desktop Menu-->
                         <ul class="nav-links">
                             <li><a class="glass scale" href="index.html">Projects</a></li>
+                            <li><a class="glass scale" href="design.html">Designs</a></li>
                             <li><a class="glass scale"href="about.html">About</a></li>
                         </ul>
                       <!-- Hamburger Menu -->
@@ -43,6 +44,7 @@ class OffScreenMenu extends HTMLElement {
                 </a>
                 <ul>
                   <li class="scale-2"><a href="index.html">Projects</a></li>
+                  <li class="scale-2"><a href="design.html">Designs</a></li>
                   <li class="scale-2"><a href="about.html">About</a></li>
                 </ul>
               </div>
