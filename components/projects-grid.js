@@ -26,7 +26,13 @@ class Projects extends HTMLElement {
         link: "https://emilyzugel.github.io/BitBlog/"
       },
       {
-        title: "Log In Checkout",
+        title: "Fullstack User Register",
+        description: "A user registration interface built with React, connected to a custom backend API.",
+        image: "./images/signin-page.png",
+        link: "https://github.com/emilyzugel/signin-page/"
+      },
+      {
+        title: "Guia do Aprendiz",
         description: "A Web Page with log in checkout in JS.",
         image: "./images/pi-becker.png",
         link: "https://emilyzugel.github.io/guia-do-aprendiz/"
