@@ -29,7 +29,7 @@ class Projects extends HTMLElement {
         title: "Fullstack User Register",
         description: "A user registration interface built with React, connected to a custom backend API.",
         image: "./images/signin-page.png",
-        link: "https://github.com/emilyzugel/signin-page/"
+        link: "https://signin-page-one.vercel.app/"
       },
       {
         title: "Guia do Aprendiz",
