@@ -26,6 +26,12 @@ class Projects extends HTMLElement {
         link: "https://emilyzugel.github.io/BitBlog/"
       },
       {
+        title: "Web Chat App",
+        description: "A Web Chat build with React and MongoDB.",
+        image: "./images/bunny-chat.png",
+        link: "https://github.com/emilyzugel/bunnyChat"
+      },
+      {
         title: "Fullstack User Register",
         description: "A user registration interface built with React, connected to a custom backend API.",
         image: "./images/signin-page.png",
