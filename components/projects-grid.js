@@ -44,10 +44,10 @@ class Projects extends HTMLElement {
         link: "https://emilyzugel.github.io/guia-do-aprendiz/"
       },
       {
-        title: "Simple Blockchain",
-        description: "A simplified Blockchain web page build in JS.",
-        image: "./images/simple-blockchain.png",
-        link: "https://github.com/emilyzugel/simpleBlockchain/"
+        title: "Flash Menu",
+        description: "A fast and affordable online ordering system for restaurants and food businesses.",
+        image: "./images/flash-menu.jpg",
+        link: "https://github.com/emilyzugel/FlashMenu/"
       },
       {
         title: "My Portifolio Code",
